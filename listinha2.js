@@ -11,9 +11,6 @@ function autonomie(){
 }
 
 ////////////  usando a function para esconder a div ate que o btn seja clickado
-
-
-
 var btn = document.querySelector("#btn");
 btn.addEventListener("click", function() {
     var div = document.querySelector("#totaut");
@@ -26,6 +23,5 @@ btn.addEventListener("click", function() {
     
 });
 
-/////////// tentando pegar o valor de dinheiro 
 
 
