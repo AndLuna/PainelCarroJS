@@ -6,19 +6,28 @@
 
 // Faça um programa que pergunte ao usuário quanto de dinheiro ele tem e em seguida diga quantos litros de combustível ele pode comprar e quantos kilometros o carro consegue andar com este tanto de combustível.
 
+// function autonomie(){
+//     var dinheiro = parseFloat(document.getElementById("dinheiro").value);
+//     let litroValor = 6.29;
+//     let km = 26;
+//     let autonomia =  Math.round(dinheiro / litroValor) * km;
+ 
+//     if(autonomia > 0) {
+//         alert("Sua autonomia e de "+autonomia+'Km');
+//     }
+     
+//     else{
+//         alert("Coloque algum valor!")
+//     } 
+//    }
+
 function autonomie(){
     var dinheiro = parseFloat(document.getElementById("dinheiro").value);
     let litroValor = 6.29;
     let km = 26;
-    let autonomia =  Math.round(dinheiro / litroValor) * km;
+    let autonomia =  (dinheiro / litroValor) * km;
  
-    if(autonomia > 0) {
-        alert("Sua autonomia e de "+autonomia+'Km');
-    }
-     
-    else{
-        alert("Coloque algum valor!")
-    } 
+   document.getElementById('autom').value =  autonomia.toFixed(2)
    }
+  
 
-   
