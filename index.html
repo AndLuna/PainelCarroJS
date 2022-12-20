@@ -22,17 +22,18 @@
         </div>
    
      <!--                 Inicio funcaozinha e alert                  -->
+      <div class="meio">
         <div class="header">
             <title>Calculo de autonomia</title>
         Dinheiro <input id="dinheiro" type="number"> <br />
         </div>
         
         <div class="botao">
-            <button onclick="autonomie()">Calcular Autonomia</button>
+            <button onclick="autonomie()" id="btn">Calcular Autonomia</button>
         </div>
-            <div class="totalAutonomia">
-                <p>Total autonomia: <input type="number" id="autom"></p>
-            </div>
+      </div>
+    
+ 
      
            <!--                 fim funcaozinha e alert                  -->
 
@@ -69,6 +70,11 @@
     </div>
 
    <!--                 Fim Progress bar                         -->
+   <div class="totalAutonomia" id="totaut">
+    <p id="x"></p>
+    <p><input type="number" id="autom"></p>
+</div>
+
 
 </aside>
 
